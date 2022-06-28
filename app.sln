@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "app", "app\app.csproj", "{E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Share", "Share\Share.csproj", "{7137768C-F451-4918-8C7B-4C4EE2932F22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pizza", "Pizza\Pizza.csproj", "{B95C2677-7A99-4A25-94E5-273CEBC2BCA6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{289264A2-9FF8-418A-82A5-C9C982CADF62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{7137768C-F451-4918-8C7B-4C4EE2932F22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7137768C-F451-4918-8C7B-4C4EE2932F22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7137768C-F451-4918-8C7B-4C4EE2932F22}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B95C2677-7A99-4A25-94E5-273CEBC2BCA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B95C2677-7A99-4A25-94E5-273CEBC2BCA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B95C2677-7A99-4A25-94E5-273CEBC2BCA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B95C2677-7A99-4A25-94E5-273CEBC2BCA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{289264A2-9FF8-418A-82A5-C9C982CADF62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{289264A2-9FF8-418A-82A5-C9C982CADF62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{289264A2-9FF8-418A-82A5-C9C982CADF62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{289264A2-9FF8-418A-82A5-C9C982CADF62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

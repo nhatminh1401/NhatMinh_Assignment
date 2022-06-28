@@ -65,16 +65,25 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Pizza">Pizzas</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Pizza">Pizza</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Orders">Orders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Category/Index">Category</a>
                         </li>
                     </div>
                     <div class="navbar-nav ml-auto">
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Tài khoản</a>
                             <div class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Identity/Pages/Account/register">Đăng ký</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Identity/Pages/Account/Login">Đăng nhập</a>
+                                </li>
                                @* @if (Session["Taikhoan"] == null)
                                 {
 
