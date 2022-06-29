@@ -1,14 +1,17 @@
+using API.Models.Products;
 using app.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Newtonsoft.Json;
+using Unipluss.Sign.ExternalContract.Entities;
 
 namespace app.Pages
 {
     public class PizzaModel : PageModel
     {
-        public List<PizzasModel> fakePizzaDB = new List<PizzasModel>() 
-        {
-            new PizzasModel(){
+        /*public List<PizzasModel> fakePizzaDB = new List<PizzasModel>() 
+        {*/
+            /*new PizzasModel(){
                 ImageTitle="Margerita",
                 PizzaName="Margerita",
                 BasePrice = 3,
@@ -79,9 +82,30 @@ namespace app.Pages
                 TomatoSauce= true ,
                 Cheese = true ,
                 FinalPrice = 7},
-        } ;
-        public void OnGet()
+        } ;*/
+        private readonly HttpClient _http;
+        public List<Product> DBProduct = new List<Product>();
+        //public List<ProductVariant> DBProductVariants = new List<ProductVariant>();
+
+        // private APIHelper _api = new APIHelper();
+       
+        public async Task<IActionResult> OnGetAsync()
         {
+            Console.WriteLine("1");
+            var client = new HttpClient();
+            client.BaseAddress = new Uri("https://localhost:7068/");
+            //var result = await _http.GetFromJsonAsync<IActionResult<Product>>($"api/product");
+            var res = await client.GetAsync("api/Product");
+            var result = res.Content.ReadAsStringAsync().Result;
+            DBProduct = JsonConvert.DeserializeObject<List<Product>>(result);
+
+            //var resV = await client.GetAsync("api/ProductVariants");
+           // var resultV = resV.Content.ReadAsStringAsync().Result;
+            //DBProductVariants = JsonConvert.DeserializeObject<List<ProductVariant>>(resultV);
+
+            return Page();
+
         }
+
     }
 }

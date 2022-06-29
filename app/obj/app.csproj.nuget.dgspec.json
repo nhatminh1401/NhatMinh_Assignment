@@ -95,6 +95,10 @@
             "Swashbuckle.AspNetCore.SwaggerUI": {
               "target": "Package",
               "version": "[6.3.1, )"
+            },
+            "Unipluss.Sign.Client": {
+              "target": "Package",
+              "version": "[1.0.2876, )"
             }
           },
           "imports": [

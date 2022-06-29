@@ -17,6 +17,19 @@ namespace API.Controllers
         }
 
         [HttpGet]
+        [Route("{id}")]
+        public async Task<IActionResult> GetCategory([FromRoute] Guid id)
+        {
+            var contact = await dbContext.Categories.FindAsync(id);
+
+            if (contact == null)
+            {
+                return NotFound();
+            }
+            return Ok(contact);
+        }
+
+        [HttpGet]
         public async Task<IActionResult> GetCategory()
         {
             return Ok(await dbContext.Categories.ToListAsync());
@@ -26,7 +39,7 @@ namespace API.Controllers
         {
             var category = new Category()
             {
-                Id = Guid.NewGuid(),
+                
                 CategoryName = addCategory.CategoryName,
                 Description = addCategory.Description,
 
@@ -36,6 +49,38 @@ namespace API.Controllers
             await dbContext.SaveChangesAsync();
 
             return Ok(category);
+        }
+        [HttpPut]
+        [Route("{id}")]
+        public async Task<IActionResult> UpdateCategory([FromRoute] int id, UpdateCategory updateCatagory)
+        {
+            var category = await dbContext.Categories.FindAsync(id);
+
+            if (category != null)
+            {
+                category.Description = updateCatagory.Description;
+                category.CategoryName = updateCatagory.CategoryName;
+
+
+                await dbContext.SaveChangesAsync();
+
+                return Ok(category);
+            }
+            return NotFound();
+        }
+
+        [HttpDelete]
+        [Route("{id}")]
+        public async Task<IActionResult> DeleteContact([FromRoute] int id)
+        {
+            var contact = await dbContext.Contacts.FindAsync(id);
+
+            if (contact != null)
+            {
+                dbContext.Remove(contact);
+                await dbContext.SaveChangesAsync();
+            }
+            return NotFound();
         }
     }
 }

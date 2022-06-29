@@ -6,12 +6,14 @@ C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\app.deps.json
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\app.runtimeconfig.json
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\app.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\app.pdb
+C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Humanizer.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\MessagePack.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\MessagePack.Annotations.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Microsoft.Build.Locator.dll
@@ -39,6 +41,7 @@ C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Microsoft.Entity
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Microsoft.Identity.Client.dll
@@ -67,6 +70,8 @@ C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\NuGet.Packaging.
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\NuGet.ProjectModel.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\NuGet.Protocol.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\NuGet.Versioning.dll
+C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\protobuf-net.dll
+C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\ServiceStack.Text.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -82,6 +87,11 @@ C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\System.Runtime.C
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\System.Security.Permissions.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Unipluss.Sign.Client.Common.dll
+C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Unipluss.Sign.Client.dll
+C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Unipluss.Sign.Common.Rest.dll
+C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Unipluss.Sign.Common.Validation.dll
+C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Unipluss.Sign.ExternalContract.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -272,5 +282,3 @@ C:\Users\nhatm\OneDrive\Desktop\source\app\app\obj\Debug\net6.0\refint\app.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\obj\Debug\net6.0\app.pdb
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\obj\Debug\net6.0\app.genruntimeconfig.cache
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\obj\Debug\net6.0\ref\app.dll
-C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
-C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll

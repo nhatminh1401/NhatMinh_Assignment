@@ -29,8 +29,7 @@
                      </div>
                  </div>
              </div>
-             @foreach (var pizza in Model.fakePizzaDB)
-                {
+             @foreach (var pizza in Model.DBProduct)                {
                     @*var imagePath = "~/images/Pizzas/" + (pizza.ImageTitle + ".png");
 
                     <div class="col-4 mb-5">
@@ -41,11 +40,11 @@
                          <br/>
                     </div>*@
 
-                    var imagePath = "~/images/Pizzas/" + (pizza.ImageTitle + ".png");
+                    var imagePath = "~/images/Pizzas/" + (pizza.ImageTitle + ".jpg");
                             <div class="col-md-4"  style="color: white ; margin-top: 10px;">
                                 <div class="product-item">
                                     <div class="product-title">
-                                        <a>@pizza.PizzaName</a>
+                                        <a>@pizza.ImageTitle</a>
                                         <div class="ratting">
                                             <i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
@@ -55,7 +54,7 @@
                                         </div>
                                     </div>
                                     <div class="product-image">
-                                        <a href="product-detail.html">
+                                        <a href="DetailProducts/@pizza.Id">
                                             @*<img alt="@pizza.PizzaName" src="~/images/Pizzas/" + (pizza.ImageTitle) />*@
                                             <img src="@imagePath" class="w-100" asp-append-version="true" />
                                         </a>
@@ -65,9 +64,9 @@
                                         </div>*@
                                     </div>
                                     <div class="product-price">
-                                        <h3>@pizza.BasePrice<span>$</span></h3>
-                                        <a class="btn btn-primary mt-1 pizza-img" asp-area="" asp-page="Checkout/Checkout"
-                                            asp-route-ImageTitle="@pizza.ImageTitle" asp-route-PizzaPrice="@pizza.FinalPrice">Get this Pizza</a>
+                                        <h3>@pizza.Price<span>VND</span></h3>
+                                        <a class="btn btn-primary mt-1 pizza-img" asp-area="" asp-page="DetailProducts"
+                                            asp-route-ProductID="@pizza.Id">Get this Book</a>
                                          <br/>
 
                                     </div>

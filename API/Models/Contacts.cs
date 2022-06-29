@@ -1,8 +1,13 @@
-﻿namespace API.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace API.Models
 {
     public class Contact
     {
-        public Guid Id { get; set; }
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
         public string FullName { get; set; }
         public string Email { get; set; }
         public long Phone { get; set; }
