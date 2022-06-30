@@ -1,0 +1,42 @@
+﻿@page
+@model app.Pages.Category.TamLyModel
+@{
+}
+ <div class="container">
+         <div class="row">
+           
+             @foreach (var pizza in Model.DBProduct)               
+             {
+                    var imagePath = "~/images/Pizzas/" + (pizza.ImageTitle);
+                            <div class="col-md-4"  style="color: white ; margin-top: 10px;">
+                                <div class="product-item">
+                                    <div class="product-title">
+                                        <a>@pizza.ProductName</a>
+                                        <div class="ratting">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product-image">
+                                        <a asp-area="" asp-page="DetailProducts"
+                                            asp-route-ProductID="@pizza.Id">
+                                            @*<img alt="@pizza.PizzaName" src="~/images/Pizzas/" + (pizza.ImageTitle) />*@
+                                            <img src="@imagePath" class="w-100" asp-append-version="true" />
+                                        </a>
+                                      
+                                    </div>
+                                    <div class="product-price">
+                                        <h3>@pizza.Price<span>VND</span></h3>
+                                        <a class="btn btn-primary mt-1 pizza-img" asp-area="" asp-page="DetailProducts"
+                                            asp-route-ProductID="@pizza.Id">Get this Book</a>
+                                         <br/>
+
+                                    </div>
+                                </div>
+                            </div>
+                 }
+         </div>
+     </div>

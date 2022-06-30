@@ -17,7 +17,7 @@ body {
   margin-bottom: 60px;
 }
 
-.mainText {
+/*.mainText {
     padding:75px 20px;
 }
 
@@ -49,13 +49,13 @@ body {
 
 .pizza-img :hover{
     transform: scale(1.05);
-}
+}*/
 
 
 /**********************************/
 /********** General CSS ***********/
 /**********************************/
-body {
+/*body {
     color: #353535;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -89,13 +89,13 @@ h2 {
         padding-right: 60px;
         padding-left: 60px;
     }
-}
+}*/
 
 
 /**********************************/
 /******** Back to Top CSS *********/
 /**********************************/
-.back-to-top {
+/*.back-to-top {
     position: fixed;
     display: none;
     background: #FF6F61;
@@ -115,13 +115,13 @@ h2 {
     .back-to-top i {
         padding-top: 12px;
         color: #ffffff;
-    }
+    }*/
 
 
 /**********************************/
 /********* Form Input CSS *********/
 /**********************************/
-.form-control,
+/*.form-control,
 .custom-select {
     width: 100%;
     height: 35px;
@@ -168,13 +168,13 @@ h2 {
         color: #ffffff;
         background: #FF6F61;
         box-shadow: none;
-    }
+    }*/
 
 
 /**********************************/
 /******* Normal Slider CSS ********/
 /**********************************/
-.normal-slider .slick-prev,
+/*.normal-slider .slick-prev,
 .normal-slider .slick-next {
     width: 40px;
     height: 40px;
@@ -248,13 +248,13 @@ h2 {
 
 .slick-dotted.slick-slider {
     margin-bottom: 0;
-}
+}*/
 
 
 /**********************************/
 /********** Top Bar CSS ***********/
 /**********************************/
-.top-bar {
+/*.top-bar {
     padding: 3px 0;
     font-size: 14px;
     color: #FF6F61;
@@ -282,13 +282,13 @@ h2 {
         .top-bar .col-sm-6:last-child {
             text-align: center;
         }
-}
+}*/
 
 
 /**********************************/
 /*********** Nav Bar CSS **********/
 /**********************************/
-.nav {
+/*.nav {
     position: relative;
 }
 
@@ -355,13 +355,13 @@ h2 {
             .nav .dropdown-menu {
                 box-shadow: none;
             }
-}
+}*/
 
 
 /**********************************/
 /********* Bottom Bar CSS *********/
 /**********************************/
-.bottom-bar {
+/*.bottom-bar {
     padding: 15px 0;
     background: #ffffff;
     margin-bottom: 30px;
@@ -451,13 +451,13 @@ h2 {
     .bottom-bar .user {
         margin-bottom: 0;
     }
-}
+}*/
 
 
 /**********************************/
 /*********** Header CSS ***********/
 /**********************************/
-.header {
+/*.header {
     position: relative;
 }
 
@@ -602,13 +602,13 @@ h2 {
 
     .header .img-text:hover p {
         margin: 0;
-    }
+    }*/
 
 
 /**********************************/
 /********* Breadcrumb CSS *********/
 /**********************************/
-.breadcrumb-wrap {
+/*.breadcrumb-wrap {
     position: relative;
     width: 100%;
 }
@@ -617,14 +617,14 @@ h2 {
         margin: 0;
         padding: 0;
         background: transparent;
-    }
+    }*/
 
 
 
 /**********************************/
 /********** Category CSS **********/
 /**********************************/
-.category {
+/*.category {
     position: relative;
     padding: 0 15px;
     margin-bottom: 30px;
@@ -692,13 +692,13 @@ h2 {
 
         .category .category-name:hover p {
             margin: 0;
-        }
+        }*/
 
 
 /**********************************/
 /*********** Feature CSS **********/
 /**********************************/
-.feature {
+/*.feature {
     position: relative;
 }
 
@@ -728,13 +728,13 @@ h2 {
         .feature .feature-content p {
             font-size: 15px;
             margin: 0;
-        }
+        }*/
 
 
 /**********************************/
 /******** Product Item CSS ********/
 /**********************************/
-.product-item {
+/*.product-item {
     position: relative;
 }
 
@@ -887,13 +887,13 @@ h2 {
 
         .product-item .product-price .btn i {
             margin-right: 5px;
-        }
+        }*/
 
 
 /**********************************/
 /******** Featured Product ********/
 /**********************************/
-.featured-product {
+/*.featured-product {
     position: relative;
     padding: 30px 0;
 }
@@ -959,13 +959,13 @@ h2 {
 .product .slick-next:hover::before,
 .product .slick-next:focus::before {
     color: #ffffff;
-}
+}*/
 
 
 /**********************************/
 /******** Product View CSS ********/
 /**********************************/
-.product-view {
+/*.product-view {
     position: relative;
     width: 100%;
     padding: 30px 0;
@@ -1083,13 +1083,13 @@ h2 {
     .product-view .pagination {
         margin-bottom: 30px;
     }
-}
+}*/
 
 
 /**********************************/
 /******* Product Detail CSS *******/
 /**********************************/
-.product-detail {
+/*.product-detail {
     position: relative;
     width: 100%;
     padding: 30px 0;
@@ -1333,13 +1333,13 @@ h2 {
         .product-detail .tab-content .form button:hover {
             color: #ffffff;
             background: #FF6F61;
-        }
+        }*/
 
 
 /**********************************/
 /********** Sidebar CSS ***********/
 /**********************************/
-.sidebar-widget {
+/*.sidebar-widget {
     padding: 30px;
     background: #ffffff;
 }
@@ -1484,13 +1484,13 @@ h2 {
             color: #ffffff;
             background: #FF6F61;
             border-color: #FF6F61;
-        }
+        }*/
 
 
 /**********************************/
 /************ Cart CSS ************/
 /**********************************/
-.cart-page {
+/*.cart-page {
     position: relative;
     margin-top: 30px;
 }
@@ -1676,13 +1676,13 @@ h2 {
                 .cart-page .cart-summary .cart-btn button:first-child:hover {
                     color: #ffffff;
                     background: #FF6F61;
-                }
+                }*/
 
 
 /**********************************/
 /********** Wishlist CSS **********/
 /**********************************/
-.wishlist-page {
+/*.wishlist-page {
     position: relative;
     padding: 30px 0;
 }
@@ -1769,13 +1769,13 @@ h2 {
             text-align: center;
             background: #000000;
             border: none;
-        }
+        }*/
 
 
 /**********************************/
 /********** Checkout CSS **********/
 /**********************************/
-.checkout {
+/*.checkout {
     position: relative;
     padding-top: 30px;
 }
@@ -1862,13 +1862,13 @@ h2 {
             .checkout .checkout-payment .checkout-btn button:hover {
                 color: #FF6F61;
                 background: #000000;
-            }
+            }*/
 
 
 /**********************************/
 /********* My Account CSS *********/
 /**********************************/
-.my-account {
+/*.my-account {
     position: relative;
     padding: 30px 0;
 }
@@ -1918,13 +1918,13 @@ h2 {
 
             .my-account .tab-content .table td {
                 vertical-align: middle;
-            }
+            }*/
 
 
 /**********************************/
 /******* Call to Action CSS *******/
 /**********************************/
-.call-to-action {
+/*.call-to-action {
     position: relative;
     padding: 30px 0;
     background: #FF6F61;
@@ -1965,13 +1965,13 @@ h2 {
         .call-to-action h1 {
             margin-bottom: 20px;
         }
-}
+}*/
 
 
 /**********************************/
 /********* Newsletter CSS *********/
 /**********************************/
-.newsletter {
+/*.newsletter {
     position: relative;
     padding: 30px 0;
     background: #FF6F61;
@@ -2029,13 +2029,13 @@ h2 {
         .newsletter .form {
             margin: 0 auto;
         }
-}
+}*/
 
 
 /**********************************/
 /*********** Brand CSS ************/
 /**********************************/
-.brand {
+/*.brand {
     position: relative;
     margin-bottom: 30px;
     padding: 30px 0;
@@ -2108,13 +2108,13 @@ h2 {
 
     .brand .slick-next::before {
         content: "\f105";
-    }
+    }*/
 
 
 /**********************************/
 /*********** Review CSS ***********/
 /**********************************/
-.review {
+/*.review {
     margin-bottom: 30px;
 }
 
@@ -2178,13 +2178,13 @@ h2 {
 
     .review .slick-slider:hover .slick-next {
         right: 30px;
-    }
+    }*/
 
 
 /**********************************/
 /********** Contact CSS ***********/
 /**********************************/
-.contact {
+/*.contact {
     position: relative;
     padding-top: 30px;
 }
@@ -2245,13 +2245,13 @@ h2 {
     .contact .contact-map iframe {
         width: 100%;
         height: 450px;
-    }
+    }*/
 
 
 /**********************************/
 /****** Register & Login CSS ******/
 /**********************************/
-.login {
+/*.login {
     position: relative;
     padding-top: 30px;
 }
@@ -2261,13 +2261,13 @@ h2 {
         padding: 30px;
         background: #ffffff;
         margin-bottom: 30px;
-    }
+    }*/
 
 
 /**********************************/
 /********** Footer CSS ************/
 /**********************************/
-.footer {
+/*.footer {
     position: relative;
     padding: 30px 0 0 0;
     background: #ffffff;
@@ -2406,13 +2406,13 @@ h2 {
 .footer .payment-method img,
 .footer .payment-security img {
     height: 25px;
-}
+}*/
 
 
 /**********************************/
 /******** Footer Bottom CSS *******/
 /**********************************/
-.footer-bottom {
+/*.footer-bottom {
     position: relative;
     padding: 25px 0;
     background: #000000;
@@ -3138,5 +3138,5 @@ h2 {
 
         .col-lg-offset-7 {
             margin-left: 58.33333333%;
-        }
+        }*/
 

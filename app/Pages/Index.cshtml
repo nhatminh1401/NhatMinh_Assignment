@@ -3,16 +3,39 @@
 @{
     ViewData["Title"] = "Home page";
 }
+<div class="container">
+         <div class="row">
+             @foreach (var pizza in Model.DBProduct)               
+             {
+                    var imagePath = "~/images/Pizzas/" + (pizza.ImageTitle);
+                            <div class="col-md-4"  style="color: white ; margin-top: 10px;">
+                                <div class="product-item">
+                                    <div class="product-title">
+                                        <a>@pizza.ProductName</a>
+                                        <div class="ratting">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product-image">
+                                        <a asp-area="" asp-page="DetailProducts"
+                                            asp-route-ProductID="@pizza.Id">
+                                            @*<img alt="@pizza.PizzaName" src="~/images/Pizzas/" + (pizza.ImageTitle) />*@
+                                            <img src="@imagePath" class="w-100" asp-append-version="true" />
+                                        </a>
+                                    </div>
+                                    <div class="product-price">
+                                        <h4 style="text-align: center">@pizza.Price<span>VND</span></h4>
+                                            <a class="btn btn-primary mt-1 pizza-img" style="text-align:right" asp-area="" asp-page="DetailProducts"
+                                            asp-route-ProductID="@pizza.Id"><i class="fa fa-shopping-cart"></i>Get this Book</a>
+                                         <br/>
 
-<div class="text-center">
-    <div class="mainText">
-        <h1 class="display-4 text-capitalize text-black">Welcome to Book Store</h1>
-        <h2 class="mainSubTitle">The Knowledge Society</h2>
-        <img  class="mainImage" src="~/images/Pizzas/dayconlamgiau.jpg" style="width:18rem ; height:18rem" />
-
-        <br/>
-        <a class="btn btn-primary mt-1" asp-area="" asp-page="Checkout/ThankYou">Bring me that KNOWLEDGE</a>
-    </div>
-    
+                                    </div>
+                                </div>
+                            </div>
+             }
+         </div>
 </div>
-

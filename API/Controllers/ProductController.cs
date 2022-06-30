@@ -36,6 +36,7 @@ namespace API.Controllers
         [HttpPost]
         public async Task<IActionResult> AddProduct(AddProduct addProduct)
         {
+            var category1 = dbContext.Categories.Find(addProduct.categoryId);
             var product = new Product()
             {
                 
@@ -43,6 +44,7 @@ namespace API.Controllers
                 Description = addProduct.Description,
                 Price = addProduct.Price,
                 ImageTitle = addProduct.ImageTitle,
+                category = category1
             };
 
             await dbContext.Products.AddAsync(product);

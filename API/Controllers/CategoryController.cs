@@ -16,17 +16,30 @@ namespace API.Controllers
             this.dbContext = dbContext;
         }
 
+        //[HttpGet]
+        //[Route("{id}")]
+        //public async Task<IActionResult> GetCategory([FromBody] int id)
+        //{
+        //    var category = await dbContext.Categories.Where(x => x.Id == id).FirstOrDefaultAsync();
+
+        //    if (category == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    return Ok(category);
+        //}
+
         [HttpGet]
         [Route("{id}")]
-        public async Task<IActionResult> GetCategory([FromRoute] Guid id)
+        public async Task<IActionResult> GetCategory([FromRoute] int id)
         {
-            var contact = await dbContext.Categories.FindAsync(id);
+            var category = await dbContext.Categories.FindAsync(id);
 
-            if (contact == null)
+            if (category == null)
             {
                 return NotFound();
             }
-            return Ok(contact);
+            return Ok(category);
         }
 
         [HttpGet]
@@ -71,13 +84,13 @@ namespace API.Controllers
 
         [HttpDelete]
         [Route("{id}")]
-        public async Task<IActionResult> DeleteContact([FromRoute] int id)
+        public async Task<IActionResult> DeleteCategory([FromRoute] int id)
         {
-            var contact = await dbContext.Contacts.FindAsync(id);
+            var category = await dbContext.Categories.FindAsync(id);
 
-            if (contact != null)
+            if (category != null)
             {
-                dbContext.Remove(contact);
+                dbContext.Remove(category);
                 await dbContext.SaveChangesAsync();
             }
             return NotFound();
