@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oq77lddCuc3iC/29thovq+DrPyhIeXOulcLYtkdv+CIEa36bs8aYrxU67lLYajr6qNWMu/eOBy1EPFUqJ4VXlg==",
+  "dgSpecHash": "Tlb7yPD7ovnrdS491nqxwjN7QZaW3c/ER+J1NSsGSDnU+N6IuZ0vz9K+gELggvPKkkX5klVOqYqBJfOgOf9e5g==",
   "success": true,
   "projectFilePath": "C:\\Users\\nhatm\\OneDrive\\Desktop\\source\\app\\app\\app.csproj",
   "expectedPackageFiles": [
@@ -107,6 +107,7 @@
     "C:\\Users\\nhatm\\.nuget\\packages\\nuget.projectmodel\\5.11.0\\nuget.projectmodel.5.11.0.nupkg.sha512",
     "C:\\Users\\nhatm\\.nuget\\packages\\nuget.protocol\\5.11.0\\nuget.protocol.5.11.0.nupkg.sha512",
     "C:\\Users\\nhatm\\.nuget\\packages\\nuget.versioning\\5.11.0\\nuget.versioning.5.11.0.nupkg.sha512",
+    "C:\\Users\\nhatm\\.nuget\\packages\\pagelist\\1.2.0\\pagelist.1.2.0.nupkg.sha512",
     "C:\\Users\\nhatm\\.nuget\\packages\\protobuf-net\\2.0.0.668\\protobuf-net.2.0.0.668.nupkg.sha512",
     "C:\\Users\\nhatm\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\nhatm\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

@@ -51,10 +51,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nhatm/OneDrive/Desktop/source/app/app/Pages/Category/TamLy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlcVGFtTHkuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/nhatm/OneDrive/Desktop/source/app/app/Pages/Checkout/Checkout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hlY2tvdXRcQ2hlY2tvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -129,6 +125,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/nhatm/OneDrive/Desktop/source/app/app/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nhatm/OneDrive/Desktop/source/app/app/Pages/Type.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHlwZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/nhatm/OneDrive/Desktop/source/app/app/Pages/_ViewImports.cshtml]

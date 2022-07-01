@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "un6TMSHfz64xRocnFmW2AVRyAKBLerLKrsx6FIoO08+T+/BKB13xsRUc/723JCvUPua/GkDlWP6QNmfiUuj0ag==",
+  "dgSpecHash": "s/Z3zR7Fbw9dVno99IjGUtuFZn+umERlqtCSMlgpob+94rHThM6lPCIwGDGtGEL80TQo9xt/R4XE2HQQuKB4Kg==",
   "success": true,
   "projectFilePath": "C:\\Users\\nhatm\\OneDrive\\Desktop\\source\\app\\Share\\Share.csproj",
   "expectedPackageFiles": [
@@ -50,6 +50,7 @@
     "C:\\Users\\nhatm\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\nhatm\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\nhatm\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\nhatm\\.nuget\\packages\\pagelist\\1.2.0\\pagelist.1.2.0.nupkg.sha512",
     "C:\\Users\\nhatm\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.3.1\\swashbuckle.aspnetcore.swagger.6.3.1.nupkg.sha512",
     "C:\\Users\\nhatm\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.3.1\\swashbuckle.aspnetcore.swaggergen.6.3.1.nupkg.sha512",
     "C:\\Users\\nhatm\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.3.1\\swashbuckle.aspnetcore.swaggerui.6.3.1.nupkg.sha512",

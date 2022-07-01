@@ -19,6 +19,7 @@
           "Microsoft.EntityFrameworkCore.Tools": "6.0.6",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.6",
           "Newtonsoft.Json": "13.0.1",
+          "PageList": "1.2.0",
           "Swashbuckle.AspNetCore.Swagger": "6.3.1",
           "Swashbuckle.AspNetCore.SwaggerGen": "6.3.1",
           "Swashbuckle.AspNetCore.SwaggerUI": "6.3.1",
@@ -1608,6 +1609,14 @@
           "lib/netstandard2.0/NuGet.Versioning.dll": {
             "assemblyVersion": "5.11.0.10",
             "fileVersion": "5.11.0.10"
+          }
+        }
+      },
+      "PageList/1.2.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/PageList.dll": {
+            "assemblyVersion": "1.2.0.0",
+            "fileVersion": "1.2.0.0"
           }
         }
       },
@@ -3239,6 +3248,13 @@
       "sha512": "sha512-mCv/GzvMk5iatWoZY41PoIShEbwVxq9CDCc1fV/uqPFKZ4DD/1JuKZ5AL/FJJRsTanvMR3EOXKYCLdQ7PFYn8Q==",
       "path": "nuget.versioning/5.11.0",
       "hashPath": "nuget.versioning.5.11.0.nupkg.sha512"
+    },
+    "PageList/1.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cE0TmBfCTtVu3mjI1Ghi2g/F3pOCqOO0i8tp3+gPqbNqdUkayzosmWo2BNPdoAJarF80RAWWsZbrt1BGIVOpjA==",
+      "path": "pagelist/1.2.0",
+      "hashPath": "pagelist.1.2.0.nupkg.sha512"
     },
     "protobuf-net/2.0.0.668": {
       "type": "package",

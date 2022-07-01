@@ -68,6 +68,10 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
+            "PageList": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
             "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",
               "version": "[6.3.1, )"

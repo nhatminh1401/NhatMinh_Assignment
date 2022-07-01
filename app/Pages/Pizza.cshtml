@@ -4,22 +4,17 @@
 }
 @* <a class="nav-link text-dark" asp-area="" asp-page="Forms/CustomPizza">CustomPizza</a>
  <a class="nav-link text-dark" asp-area="" asp-page="Checkout/Checkout">Checkout</a>*@
+<div class="product-view">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="text-center">
+                <div class="container">
+                    <div class="row">
 
- <div class="text-center">
-     <div class="mainText">
-          <h1 class="display-4 text-capitalize text-black">Our great Selection</h1>
-          <h4>Choose one Or More</h4>
-          <h4>no need to give any of your details</h4>
-          <h4>We already know everything</h4>
-          <p class="smallText"><i>only one pizza per order</i></p>
-     </div>
-     <div class="container">
-         <div class="row">
-           
-             @foreach (var pizza in Model.DBProduct)               
-             {
-                    var imagePath = "~/images/Pizzas/" + (pizza.ImageTitle);
-                            <div class="col-md-4"  style="color: white ; margin-top: 10px;">
+                        @foreach (var pizza in Model.DBProduct)
+                        {
+                            var imagePath = "~/images/Pizzas/" + (pizza.ImageTitle);
+                            <div class="col-md-4" style="color: white ; margin-top: 10px;">
                                 <div class="product-item">
                                     <div class="product-title">
                                         <a>@pizza.ProductName</a>
@@ -33,22 +28,40 @@
                                     </div>
                                     <div class="product-image">
                                         <a asp-area="" asp-page="DetailProducts"
-                                            asp-route-ProductID="@pizza.Id">
+                                       asp-route-ProductID="@pizza.Id">
                                             @*<img alt="@pizza.PizzaName" src="~/images/Pizzas/" + (pizza.ImageTitle) />*@
                                             <img src="@imagePath" class="w-100" asp-append-version="true" />
                                         </a>
-                                      
+
                                     </div>
                                     <div class="product-price">
                                         <h3>@pizza.Price<span>VND</span></h3>
                                         <a class="btn btn-primary mt-1 pizza-img" asp-area="" asp-page="DetailProducts"
-                                            asp-route-ProductID="@pizza.Id">Get this Book</a>
-                                         <br/>
+                                       asp-route-ProductID="@pizza.Id">Get this Book</a>
+                                        <br />
 
                                     </div>
                                 </div>
                             </div>
-                 }
-         </div>
-     </div>
- </div>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 sidebar">
+                <div class="sidebar-widget category" style="box-shadow: 6px -4px 20px -7px #888888;">
+                    <h2 class="title">DANH MỤC SẢN PHẨM</h2>
+                    <nav class="navbar bg-light">
+                        <ul class="navbar-nav">
+                            <a class="nav-link text-dark"></a>
+                            @foreach (var item in Model.CateroryID)
+                            {
+                                <a>@item.CategoryName</a>
+                            }
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

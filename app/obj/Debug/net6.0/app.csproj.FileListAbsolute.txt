@@ -70,6 +70,7 @@ C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\NuGet.Packaging.
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\NuGet.ProjectModel.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\NuGet.Protocol.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\NuGet.Versioning.dll
+C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\PageList.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\protobuf-net.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\ServiceStack.Text.dll
 C:\Users\nhatm\OneDrive\Desktop\source\app\app\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll

@@ -1,7 +1,9 @@
 ﻿using API.Data;
+using API.Models;
 using API.Models.Products;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+
 
 namespace API.Controllers
 {
@@ -9,10 +11,10 @@ namespace API.Controllers
     [Route("api/[controller]")]
     public class ProductController : Controller
     {
-        private readonly ContactsAPIDbContext dbContext; 
-        public ProductController (ContactsAPIDbContext dbContext)
+        private readonly ContactsAPIDbContext dbContext;
+        public ProductController(ContactsAPIDbContext dbContext)
         {
-            this .dbContext = dbContext;
+            this.dbContext = dbContext;
         }
         [HttpGet]
         public async Task<IActionResult> GetProduct()
@@ -36,15 +38,16 @@ namespace API.Controllers
         [HttpPost]
         public async Task<IActionResult> AddProduct(AddProduct addProduct)
         {
-            var category1 = dbContext.Categories.Find(addProduct.categoryId);
+            var category1 = dbContext.Categories.Find(addProduct.category);
             var product = new Product()
             {
-                
+
                 ProductName = addProduct.ProductName,
                 Description = addProduct.Description,
                 Price = addProduct.Price,
                 ImageTitle = addProduct.ImageTitle,
-                category = category1
+                //categoryId = addProduct.categoryId,
+                category = category1,
             };
 
             await dbContext.Products.AddAsync(product);
@@ -64,6 +67,7 @@ namespace API.Controllers
                 product.Description = updateProduct.Description;
                 product.Price = updateProduct.Price;
                 product.ImageTitle = updateProduct.ImageTitle;
+                
 
 
                 await dbContext.SaveChangesAsync();
@@ -86,5 +90,6 @@ namespace API.Controllers
             }
             return NotFound();
         }
+        
     }
 }
