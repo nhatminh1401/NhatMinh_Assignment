@@ -15,5 +15,7 @@ namespace API.Models.Products
         //public int categoryId { get; set; }
         public  Category category { get; set; }
 
+        public IEnumerable<Rating> ratings { get; set; }
+
     }
 }

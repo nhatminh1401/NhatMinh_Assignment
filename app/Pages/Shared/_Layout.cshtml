@@ -194,29 +194,35 @@
                         <h2 class="title">DANH MỤC SẢN PHẨM</h2>
                         <nav class="navbar bg-light">
                             <ul class="navbar-nav">
-                                <a asp-page="/Category/Tamly">Tâm lý</a>
-                                <a asp-page="/Category/Tamly">Chiến lược</a>
-                                <a asp-page="/Category/Tamly">Tình cảm</a>
-                                <a asp-page="/Category/Tamly">Sách giáo khoa</a>
-                                <a asp-page="/Category/Tamly">Trinh thám</a>
+                                <a asp-route-CategoryID="1" asp-page="/Categories/Tamly">Tâm lý</a>
+                                <a asp-route-CategoryID="2" asp-page="/Categories/Chienluoc">Chiến lược</a>
+                                <a asp-route-CategoryID="3" asp-page="/Categories/tinhcam">Tình cảm</a>
+                                <a asp-route-CategoryID="4" asp-page="/Categories/SGK">Sách giáo khoa</a>
+                                <a asp-route-CategoryID="6" asp-page="/Categories/Trinhtham">Trinh thám</a>
                             </ul>
                         </nav>
                     </div>
 
                     <div class="sidebar-widget widget-slider" style="box-shadow: 6px -4px 20px -7px #888888;">
-                        <h2 class="title" style="margin-top: 15px">SẢN PHẨM BÁN CHẠY</h2>
+                        <br />
+                        <h2 class="title">SẢN PHẨM BÁN CHẠY</h2>
                         <div class="sidebar-slider normal-slider">
-                            
-                            <img src="~/images/Pizzas/dayconlamgiau.jpg" alt="">
-
-                            <img src="~/images/Pizzas/dayconlamgiau2.jpg" alt="">
-
-                            <img src="~/images/Pizzas/demenphieuluu.jpg" alt="">
-
-                            <img src="~/images//Pizzas/bipkipcuadoCr.jpg" alt="">
-
-                            <img src="~/images/Pizzas/dac-nhan-tam.jpg" alt="">
-
+                            <a asp-area="" asp-page="DetailProducts"
+                               asp-route-ProductID="20">
+                                <img src="~/images/Pizzas/dayconlamgiau.jpg" class="w-100" asp-append-version="true" />
+                            </a><a asp-area="" asp-page="DetailProducts"
+                                   asp-route-ProductID="35">
+                                <img src="~/images/Pizzas/demenphieuluu.jpg" class="w-100" asp-append-version="true" />
+                            </a><a asp-area="" asp-page="DetailProducts"
+                                   asp-route-ProductID="19">
+                                <img src="~/images/Pizzas/bipkipcuadoCr.jpg" class="w-100" asp-append-version="true" />
+                            </a><a asp-area="" asp-page="DetailProducts"
+                                   asp-route-ProductID="18">
+                                <img src="~/images/Pizzas/dayconlamgiau2.jpg" class="w-100" asp-append-version="true" />
+                            </a><a asp-area="" asp-page="DetailProducts"
+                                   asp-route-ProductID="39">
+                                <img src="~/images/Pizzas/dac-nhan-tam.jpg" class="w-100" asp-append-version="true" />
+                            </a>
                         </div>
 
                     </div>

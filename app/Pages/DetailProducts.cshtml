@@ -54,49 +54,59 @@
 
     </div>
 </div>
-<div class="container">
-    <div class="post">
-        <div class="text">Thanks for rating us!</div>
-        <div class="edit">Edit</div>
-    </div>
-    <div class="star-widget">
-        <input type="radio" name="rate" id="rate-5" />
-        <label for="rate-5" class="fas fa-star"></label>
+<form asp-page="DetailProducts" asp-route-ProductID="@Model.DBProduct.Id" method="POST">
+    <div class="container">
+        <div class="post">
+            <div class="text">Thanks for rating us!</div>
+            <div class="edit">Edit</div>
+        </div>
+        <div class="star-widget">
+            <input type="radio" name="star1" id="rate-5" onclick="myFunction(5)">
+            <label for="rate-5" class="fas fa-star"></label>
 
-        <input type="radio" name="rate" id="rate-4" />
-        <label for="rate-4" class="fas fa-star"></label>
+            <input type="radio" name="star2" id="rate-4" onclick="myFunction(4)">
+            <label for="rate-4" class="fas fa-star"></label>
 
-        <input type="radio" name="rate" id="rate-3" />
-        <label for="rate-3" class="fas fa-star"></label>
+            <input type="radio" name="star3" id="rate-3" onclick="myFunction(3)">
+            <label for="rate-3" class="fas fa-star"></label>
 
-        <input type="radio" name="rate" id="rate-2" />
-        <label for="rate-2" class="fas fa-star"></label>
+            <input type="radio" name="star4" id="rate-2" onclick="myFunction(2)">
+            <label for="rate-2" class="fas fa-star"></label>
 
-        <input type="radio" name="rate" id="rate-1" />
-        <label for="rate-1" class="fas fa-star"></label>
+            <input type="radio" name="star5" id="rate-1" onclick="myFunction(1)">
+            <label for="rate-1" class="fas fa-star"></label>
 
-        <form action="#">
+            <input type="hidden" id="star" name="star" value="5" />
+
+
             <header></header>
             <div class="textarea">
-                <textarea cols="30" placeholder="Describle your experience...."></textarea>
+               @* <input type="hidden" id="cmt" name="cmt" value="5" />*@
+                <textarea type="text" name="cmt" cols="30" placeholder="Describle your experience...."></textarea>
             </div>
-            <div class="btn">
+            @*<div class="btn">
                 <button type="submit">Post</button>
-            </div>
-        </form>
+            </div>*@
+
+        </div>
     </div>
-</div>
+    <input type="submit" placeholder="get it" />
+</form>
+@*@foreach (var rate in @Model.DbRating)
+{
+    
+}*@
 
 <script>
     const btn = document.querySelector("button");
     const post = document.querySelector(".post");
     const widget = document.querySelector(".star-widget");
     const editBtn = document.querySelector(".edit");
-    btn.onclick = () => {
-        widget.style.display = "none";
-        post.style.display = "block";
-        return false;
-    }
+            //btn.onclick = () => {
+            //    widget.style.display = "none";
+            //    post.style.display = "block";
+            //    return false;
+            //}
 </script>
 <!-- Product Detail End -->
 
@@ -195,7 +205,7 @@
         text-align: center;
         transition: all 0.2s ease;
     }
-    form .textarea{
+    /*form .textarea{
         height: 100px;
         width: 100%;
         overflow: hidden;
@@ -210,7 +220,7 @@
         padding: 10px;
         font-size: 17px;
         resize: none;
-    }
+    }*/
     form .btn{
         height: 45px;
         width: 100%;

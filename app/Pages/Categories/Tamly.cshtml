@@ -1,0 +1,57 @@
+﻿@page
+@model app.Pages.Categories.TamlyModel
+@{
+}
+
+@*@foreach (var id in Model.ProductCategory)
+{
+    <h2>@id.ProductName</h2>
+}
+*@
+
+<div class="product-view">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="text-center">
+                <div class="container">
+                    <div class="row">
+
+                        @foreach (var item in Model.ProductCategory)
+                        {
+                            var imagePath = "~/images/Pizzas/" + (item.ImageTitle);
+                            <div class="col-md-4" style="color: white ; margin-top: 10px;">
+                                <div class="product-item">
+                                    <div class="product-title">
+                                        <a>@item.ProductName</a>
+                                        <div class="ratting">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product-image">
+                                        <a asp-page="/DetailProducts"
+                                       asp-route-ProductID="@item.Id">
+                                            @*<img alt="@pizza.PizzaName" src="~/images/Pizzas/" + (pizza.ImageTitle) />*@
+                                            <img src="@imagePath" class="w-100" asp-append-version="true" />
+                                        </a>
+
+                                    </div>
+                                    <div class="product-price">
+                                        <h3>@item.Price<span>VND</span></h3>
+                                        <a class="btn btn-primary mt-1 pizza-img" asp-area="" asp-page="/DetailProducts"
+                                       asp-route-ProductID="@item.Id">Get this Book</a>
+                                        <br />
+
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

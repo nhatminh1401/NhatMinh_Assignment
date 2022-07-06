@@ -11,6 +11,6 @@ namespace app.Models
         public int Id { get; set; }
         public string Comment { get; set; }
         public int Ratting { get; set; }
-        public IEnumerable<Product> products { get; set; }
+        //public IEnumerable<Product> products { get; set; }
     }
 }

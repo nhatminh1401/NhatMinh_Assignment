@@ -11,9 +11,10 @@ namespace app.Pages
     {
         private readonly HttpClient _http;
         public Product DBProduct = new Product();
-        public Rating DBRating = new Rating();
+
+        public Rating DbRating = new Rating();
         private int id;
-        public async Task<IActionResult> OnGetAsync(int ProductID)
+        public async Task<IActionResult> OnGetAsync(int ProductID, int IdRate )
         {
             var client = new HttpClient();
             client.BaseAddress = new Uri("https://localhost:7068/");
@@ -26,14 +27,23 @@ namespace app.Pages
             DBProduct = JsonConvert.DeserializeObject<Product>(result);
 
 
-            var rate = await client.GetAsync("api/Rating");
-            var rating = res.Content.ReadAsStringAsync().Result;
-            DBProduct = JsonConvert.DeserializeObject<Product>(rating);
-
+            var rat = await client.GetAsync("api/Rating/" + id);
+            var rates= rat.Content.ReadAsStringAsync().Result;
+            DbRating = JsonConvert.DeserializeObject<Rating>(rates);
 
             return Page();
 
         }
+        public async Task<IActionResult> OnPost(int ProductID)
+        {
+            var i = int.Parse(Request.Form["star"]);
+            //var cmt = (Request.Form["cmt"]).ToString;
+            
+
+            return Page();
+        }
+       
+
 
     }
 }

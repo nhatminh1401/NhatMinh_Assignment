@@ -34,6 +34,19 @@ namespace API.Controllers
             return Ok(product);
         }
 
+        [HttpGet]
+        [Route("category/{id}")]
+        public async Task<IActionResult> GetProductById([FromRoute] int id)
+        {
+            var product = await dbContext.Products.Where(x => x.category.Id == id).ToListAsync();
+
+            if (product == null)
+            {
+                return NotFound();
+            }
+            return Ok(product);
+        }
+
 
         [HttpPost]
         public async Task<IActionResult> AddProduct(AddProduct addProduct)
