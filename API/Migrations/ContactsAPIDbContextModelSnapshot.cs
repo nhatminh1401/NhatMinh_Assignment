@@ -94,14 +94,39 @@ namespace API.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("RatingId")
+                        .HasColumnType("int");
+
                     b.Property<int>("categoryId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("RatingId");
+
                     b.HasIndex("categoryId");
 
                     b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("API.Models.Rating", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Comment")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Ratting")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Ratings");
                 });
 
             modelBuilder.Entity("API.Models.RefreshToken", b =>
@@ -196,6 +221,10 @@ namespace API.Migrations
 
             modelBuilder.Entity("API.Models.Products.Product", b =>
                 {
+                    b.HasOne("API.Models.Rating", null)
+                        .WithMany("products")
+                        .HasForeignKey("RatingId");
+
                     b.HasOne("API.Models.Category", "category")
                         .WithMany("products")
                         .HasForeignKey("categoryId")
@@ -217,6 +246,11 @@ namespace API.Migrations
                 });
 
             modelBuilder.Entity("API.Models.Category", b =>
+                {
+                    b.Navigation("products");
+                });
+
+            modelBuilder.Entity("API.Models.Rating", b =>
                 {
                     b.Navigation("products");
                 });

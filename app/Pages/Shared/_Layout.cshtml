@@ -1,16 +1,15 @@
-﻿
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - app</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/app.styles.css" asp-append-version="true" />
+    <meta name="viewport" content="width=device-width" />
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="eCommerce HTML Template Free Download" name="keywords">
+    <meta content="eCommerce HTML Template Free Download" name="description">
 
     <!-- Favicon -->
-    <link href="~/favicon.ico" rel="icon">
+    <link href="~/img/favicon.ico" rel="icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
@@ -21,15 +20,53 @@
     <link href="~/lib/slick/slick.css" rel="stylesheet">
     <link href="~/lib/slick/slick-theme.css" rel="stylesheet">
 
+
     <!-- Template Stylesheet -->
-    <link href="~/css/style.css" rel="stylesheet">
-    
-    
-        <div class="top-bar">
+    <link href="~/css/Content/style.css" rel="stylesheet">
+</head>
+<body>
+    <style>
+        .col-md-4 {
+            box-shadow: 6px -4px 20px -7px #888888;
+        }
+
+        .dropdown-item {
+            line-height: 46px;
+            height: 46px;
+        }
+
+        .product-item .product-title {
+            padding: 15px;
+            text-align: center;
+            background: white;
+            transition: all .3s;
+        }
+
+            .product-item .product-title a {
+                margin-bottom: 5px;
+                color: black;
+                font-size: 18px;
+            }
+
+        .product-item .product-price {
+            padding: 20px;
+            background: white;
+            transition: all .3s;
+        }
+
+            .product-item .product-price h3 {
+                display: inline-block;
+                color: black;
+                margin: 0;
+            }
+    </style>
+
+
+    <div class="top-bar">
         <div class="container-fluid">
             @*@using BookStore.Models;
             @{
-                KHACHHANG kh = (KHACHHANG)Session["Taikhoan"];
+            KHACHHANG kh = (KHACHHANG)Session["Taikhoan"];
             }*@
             <div class="row">
                 <div class="col-sm-6" style="color:white;">
@@ -37,14 +74,14 @@
                     Chào mừng:
                     @*@if (Session["Taikhoan"] != null)
                     {
-                        @kh.HoTen
+                    @kh.HoTen
                     }*@
                 </div>
                 <div class="col-sm-6" style="color:white;">
                     <i class="fa fa-phone-alt"></i>
-                   @* @if (Session["Taikhoan"] != null)
+                    @* @if (Session["Taikhoan"] != null)
                     {
-                        @kh.DienthoaiKH
+                    @kh.DienthoaiKH
                     }*@
                 </div>
             </div>
@@ -77,7 +114,7 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-page="/Orders">Orders</a>
                         </li>
-                        
+
                     </div>
 
                     <div class="navbar-nav ml-auto">
@@ -90,31 +127,27 @@
                                 <li class="nav-item">
                                     <a class="nav-link text-dark" asp-area="" asp-page="/Account/Login">Đăng nhập</a>
                                 </li>
-                               @* @if (Session["Taikhoan"] == null)
+                                @* @if (Session["Taikhoan"] == null)
                                 {
 
-                                    @Html.ActionLink("Đăng nhập", "Dangnhap", "Nguoidung", null, new { @class = "dropdown-item" })
-                                    @Html.ActionLink("Đăng ký", "Dangky", "Nguoidung", null, new { @class = "dropdown-item" })
+                                @Html.ActionLink("Đăng nhập", "Dangnhap", "Nguoidung", null, new { @class = "dropdown-item" })
+                                @Html.ActionLink("Đăng ký", "Dangky", "Nguoidung", null, new { @class = "dropdown-item" })
                                 }
                                 else
                                 {
-                                    @Html.ActionLink("Đăng xuất", "Dangxuat", "Nguoidung", null, new { @class = "dropdown-item" })
+                                @Html.ActionLink("Đăng xuất", "Dangxuat", "Nguoidung", null, new { @class = "dropdown-item" })
                                 }*@
 
                             </div>
 
                         </div>
                     </div>
-                    
+
                 </div>
             </nav>
         </div>
     </div>
-
-
-</head>
-<body>
-   <!-- Nav Bar End -->
+    <!-- Nav Bar End -->
     <!-- Bottom Bar Start -->
     <div class="bottom-bar">
         <div class="container-fluid">
@@ -122,7 +155,7 @@
                 <div class="col-md-3">
                     <div class="logo">
                         <a asp-area="" asp-page="Index">
-                            <img src="~/images/logo.png" alt="Logo"  asp-append-version="true">
+                            <img src="~/images/logo.png" alt="Logo" asp-append-version="true">
                         </a>
                     </div>
                 </div>
@@ -139,13 +172,14 @@
                     </div>
                 </div>
                 @*<div class="col-md-3">
-                    @Html.Action("GiohangPartial", "Giohang")
+                @Html.Action("GiohangPartial", "Giohang")
                 </div>*@
             </div>
         </div>
     </div>
-    <!-- Bottom Bar End -->
-     <div class="product-view">
+    <!-- Product List End -->
+    <!-- Product List Start -->
+    <div class="product-view">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-8">
@@ -155,32 +189,43 @@
 
                 </div>
                 <!-- Side Bar Start -->
-              @*  <div class="col-lg-4 sidebar">
+                <div class="col-lg-4 sidebar">
                     <div class="sidebar-widget category" style="box-shadow: 6px -4px 20px -7px #888888;">
                         <h2 class="title">DANH MỤC SẢN PHẨM</h2>
                         <nav class="navbar bg-light">
                             <ul class="navbar-nav">
-                                <a class="nav-link text-dark"></a>
-                                    @foreach (var item in @Model.DBProduct)
-                                    {
-                                        @item.CategoryName
-                                    }
+                                <a asp-page="/Category/Tamly">Tâm lý</a>
+                                <a asp-page="/Category/Tamly">Chiến lược</a>
+                                <a asp-page="/Category/Tamly">Tình cảm</a>
+                                <a asp-page="/Category/Tamly">Sách giáo khoa</a>
+                                <a asp-page="/Category/Tamly">Trinh thám</a>
                             </ul>
                         </nav>
-                    </div>*@
+                    </div>
 
-                 @*   <div class="sidebar-widget widget-slider" style="box-shadow: 6px -4px 20px -7px #888888;">
+                    <div class="sidebar-widget widget-slider" style="box-shadow: 6px -4px 20px -7px #888888;">
+                        <h2 class="title" style="margin-top: 15px">SẢN PHẨM BÁN CHẠY</h2>
                         <div class="sidebar-slider normal-slider">
-                            @Html.Action("SachTop5sp", "BookStore")
-                        </div>
-                    </div>*@
+                            
+                            <img src="~/images/Pizzas/dayconlamgiau.jpg" alt="">
 
-                    @*<div class="sidebar-widget brands" style="box-shadow: 6px -4px 20px -7px #888888;margin-top:10px;">
+                            <img src="~/images/Pizzas/dayconlamgiau2.jpg" alt="">
+
+                            <img src="~/images/Pizzas/demenphieuluu.jpg" alt="">
+
+                            <img src="~/images//Pizzas/bipkipcuadoCr.jpg" alt="">
+
+                            <img src="~/images/Pizzas/dac-nhan-tam.jpg" alt="">
+
+                        </div>
+
+                    </div>
+
+                    <div class="sidebar-widget brands" style="box-shadow: 6px -4px 20px -7px #888888;margin-top:10px;">
                         <h2 class="title">NHÀ XUẤT BẢN</h2>
                         <ul>
-                            
                         </ul>
-                    </div>*@
+                    </div>
                 </div>
                 <!-- Side Bar End -->
             </div>
@@ -201,21 +246,7 @@
         </div>
     </div>
     <!-- Brand End -->
-
-   @* <footer class="border-top footer text-muted">
-        <div class="container">
-            
-        </div>
-    </footer>
-
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>*@
-
-    @await RenderSectionAsync("Scripts", required: false)
-
-
-     <!-- Footer Start -->
+    <!-- Footer Start -->
     <div class="footer">
         <div class="container-fluid">
             <div class="row">
@@ -242,10 +273,10 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                <div class="contact-map">
-                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31349.47506752563!2d106.64898334889811!3d10.835447706678163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529078b51e6eb%3A0x28bd5bd9f01a1edc!2zR8OyIFbhuqVwLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2sus!4v1654166416619!5m2!1svi!2sus" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31349.47506752563!2d106.64898334889811!3d10.835447706678163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529078b51e6eb%3A0x28bd5bd9f01a1edc!2zR8OyIFbhuqVwLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2sus!4v1654166416619!5m2!1svi!2sus" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
     </div>
@@ -254,18 +285,16 @@
     <!-- Back to Top -->
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-
-   
-
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="~/lib/easing/easing.min.js"></script>
     <script src="~/lib/slick/slick.min.js"></script>
-    
 
     <!-- Template Javascript -->
-    <script src="~/Scripts/main.js"></script>
-    
+    <script src="~/css/Scripts/main.js"></script>
 </body>
 </html>
+
+
+

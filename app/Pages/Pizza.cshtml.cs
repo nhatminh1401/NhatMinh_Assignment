@@ -1,10 +1,7 @@
-using API.Models;
 using API.Models.Products;
-using app.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Newtonsoft.Json;
-using Unipluss.Sign.ExternalContract.Entities;
 
 namespace app.Pages
 {
@@ -12,10 +9,11 @@ namespace app.Pages
     {
 
         private readonly HttpClient _http;
+
         public List<Product> DBProduct = new List<Product>();
+        public int categoryId;
 
-
-        public List<Category> CateroryID = new List<Category>();
+        //public List<Category> CateroryID = new List<Category>();
 
         public async Task<IActionResult> OnGetAsync()
         {
@@ -30,9 +28,10 @@ namespace app.Pages
 
 
 
-            var cid = await client.GetAsync("api/Category");
-            var CId = cid.Content.ReadAsStringAsync().Result;
-            CateroryID = JsonConvert.DeserializeObject<List<Category>>(CId);
+            //var cid = await client.GetAsync("api/Category");
+            //var CId = res.Content.ReadAsStringAsync().Result;
+            //CateroryID = JsonConvert.DeserializeObject<List<Category>>(CId);
+
 
 
             return Page();

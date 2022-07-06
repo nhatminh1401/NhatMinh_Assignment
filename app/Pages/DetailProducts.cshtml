@@ -4,51 +4,232 @@
 }
 
 <div class="product-detail">
-            <div class="col-lg-12">
-                <div class="product-detail-top">
-                    <div class="row align-items-center">
-                        <div class="col-md-5">
-                            <div class="product-slider-single normal-slider">
-                                <img src="~/images/Pizzas/@Model.DBProduct.ImageTitle"/>
-                            </div>
-
-                        </div>
-                        <div class="col-md-7">
-                            <div class="product-content">
-                                <div class="title"><h2>@Model.DBProduct.ProductName</h2></div>
-                                <div class="ratting">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                                <div class="price">
-                                    <h4>Price:</h4>
-                                    <p>@Model.DBProduct.Price đ</p>
-                                </div>
-                                <div class="quantity">
-                                    <h4>Số lượng:</h4>
-                                    <div class="qty">
-                                        <input type="text" value="1">
-                                    </div>
-                                </div>
-                                <div class="p-color">
-                                    <h4>Mô tả:</h4>
-                                    <div class="btn-group btn-group-sm">
-                                        <p>@Model.DBProduct.Description</p>
-                                    </div>
-                                </div>
-                                <div class="action">
-                                    <a class="btn" style="float:center" asp-area="" asp-page="Checkout/ThankYou" ><i class="fa fa-shopping-bag"></i>Mua ngay</a>
-
-                                   
-                                </div>
-                            </div>
-                        </div>
+    <div class="col-lg-12">
+        <div class="product-detail-top">
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    <div class="product-slider-single normal-slider">
+                        <img src="~/images/Pizzas/@Model.DBProduct.ImageTitle" />
                     </div>
+
                 </div>
 
+                <div class="col-md-7">
+                    <div class="product-content">
+                        <div class="title"><h2>@Model.DBProduct.ProductName</h2></div>
+                        <div class="ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+
+                        <div class="price">
+                            <h4>Price:</h4>
+                            <p>@Model.DBProduct.Price đ</p>
+                        </div>
+                        <div class="quantity">
+                            <h4>Số lượng:</h4>
+                            <div class="qty">
+                                <input type="text" value="1">
+                            </div>
+                        </div>
+                        <div class="p-color">
+                            <h4>Mô tả:</h4>
+                            <div class="btn-group btn-group-sm">
+                                <p>@Model.DBProduct.Description</p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <a class="btn" style="float:center" asp-area="" asp-page="Checkout/ThankYou"><i class="fa fa-shopping-bag"></i>Mua ngay</a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
+
+    </div>
 </div>
+<div class="container">
+    <div class="post">
+        <div class="text">Thanks for rating us!</div>
+        <div class="edit">Edit</div>
+    </div>
+    <div class="star-widget">
+        <input type="radio" name="rate" id="rate-5" />
+        <label for="rate-5" class="fas fa-star"></label>
+
+        <input type="radio" name="rate" id="rate-4" />
+        <label for="rate-4" class="fas fa-star"></label>
+
+        <input type="radio" name="rate" id="rate-3" />
+        <label for="rate-3" class="fas fa-star"></label>
+
+        <input type="radio" name="rate" id="rate-2" />
+        <label for="rate-2" class="fas fa-star"></label>
+
+        <input type="radio" name="rate" id="rate-1" />
+        <label for="rate-1" class="fas fa-star"></label>
+
+        <form action="#">
+            <header></header>
+            <div class="textarea">
+                <textarea cols="30" placeholder="Describle your experience...."></textarea>
+            </div>
+            <div class="btn">
+                <button type="submit">Post</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    const btn = document.querySelector("button");
+    const post = document.querySelector(".post");
+    const widget = document.querySelector(".star-widget");
+    const editBtn = document.querySelector(".edit");
+    btn.onclick = () => {
+        widget.style.display = "none";
+        post.style.display = "block";
+        return false;
+    }
+</script>
 <!-- Product Detail End -->
+
+<style>
+    .container{
+        position: relative;
+        width: 500px;
+        background: #FFFFFF;
+        padding: 20px 30px;
+        border: 1px solid #FFFFFF;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container .post{
+        display: none;
+    }
+    .container .text{
+        font-size: 25px;
+        color: #666;
+        font-weight: 500;
+    }
+    .container .edit{
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        font-size: 16px;
+        color: #666;
+        font-weight: 500;
+        curson: pointer;
+    }
+    .container .edit:hover{
+        text-decoration: underline;
+    }
+     .star-widget input{
+        display: none;
+    }
+    .star-widget label{
+        font-size: 40px;
+        color: #C0C0C0;
+        padding: 10px;
+        float: right;
+        transition: all 0.2s ease;
+    }
+    input:not(:checked) ~ label:hover,
+    input:not(:checked) ~ label:hover ~ label{
+        color: #fd4;
+    }
+    input#rate-5:checked ~ label{
+        color: #fe7;
+        text-shadow: 0 0 20px #952
+    }
+    input#rate-4:checked ~ label{
+        color: #fe7;
+        text-shadow: 0 0 20px #951
+    }
+    input#rate-3:checked ~ label{
+        color: #fe7;
+        text-shadow: 0 0 20px
+    }
+    input#rate-2:checked ~ label{
+        color: #fe7;
+        text-shadow: 0 0 20px
+    }
+    input#rate-1:checked ~ label{
+        color: #fe7;
+        text-shadow: 0 0 20px
+    }
+
+    #rate-1:checked ~  form header:before{
+        content: "I don't like it 😡😡😡";
+    }#rate-2:checked ~  form header:before{
+        content: "I don't like much 🥱";
+    }#rate-3:checked ~  form header:before{
+        content: "I is awesome 😄";
+    }#rate-4:checked ~  form header:before{
+        content: "I just like it 😎";
+    }#rate-5:checked ~  form header:before{
+        content: "I love it 😍";
+    }
+    .container form{
+        display: none;
+    }
+    input:checked ~ form{
+        display : block;
+
+    }
+    form header{
+        width:100%;
+        font-size: 25px;
+        color: #fe7;
+        font-weight:500;
+        margin: 5px 0 20px 0;
+        text-align: center;
+        transition: all 0.2s ease;
+    }
+    form .textarea{
+        height: 100px;
+        width: 100%;
+        overflow: hidden;
+    }
+    form .textarea textarea{
+        height: 100%;
+        width: 100%;
+        outline: none;
+        color: #000;
+        border: 1px solid #FFFFFF;
+        background: #FFFF;
+        padding: 10px;
+        font-size: 17px;
+        resize: none;
+    }
+    form .btn{
+        height: 45px;
+        width: 100%;
+        margin: 15px 0;
+    }
+    form .btn button{
+        height: 100%;
+        width: 100%;
+        border: 1px solid #FFFF;
+        outline: none;
+        /background: #FFCCFF;
+        color: #999;
+        font-size: 17px;
+        font-weight:500;
+        text-transform : uppercase;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    /*form .btn button:hover{
+        background: #FF99CC;
+    }*/
+</style>

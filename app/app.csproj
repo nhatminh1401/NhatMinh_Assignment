@@ -39,7 +39,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Pages\Category\" />
+    <ProjectReference Include="..\API\API.csproj" />
   </ItemGroup>
 
 </Project>

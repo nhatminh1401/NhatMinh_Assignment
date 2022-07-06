@@ -686,7 +686,7 @@ h2 {
 .product-item .product-title {
     padding: 15px;
     text-align: center;
-    background: #34a6e9;
+    background: #000000;
     transition: all .3s;
 }
 
@@ -799,7 +799,7 @@ h2 {
 
 .product-item .product-price {
     padding: 20px;
-    background: #34a6e9;
+    background: #000000;
     transition: all .3s;
 }
 

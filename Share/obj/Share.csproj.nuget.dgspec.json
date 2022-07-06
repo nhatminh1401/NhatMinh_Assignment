@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nhatm\\OneDrive\\Desktop\\source\\app\\Share\\Share.csproj": {}
+    "C:\\Users\\nhatm\\OneDrive\\Desktop\\app\\Share\\Share.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nhatm\\OneDrive\\Desktop\\source\\app\\Share\\Share.csproj": {
+    "C:\\Users\\nhatm\\OneDrive\\Desktop\\app\\Share\\Share.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nhatm\\OneDrive\\Desktop\\source\\app\\Share\\Share.csproj",
+        "projectUniqueName": "C:\\Users\\nhatm\\OneDrive\\Desktop\\app\\Share\\Share.csproj",
         "projectName": "Share",
-        "projectPath": "C:\\Users\\nhatm\\OneDrive\\Desktop\\source\\app\\Share\\Share.csproj",
+        "projectPath": "C:\\Users\\nhatm\\OneDrive\\Desktop\\app\\Share\\Share.csproj",
         "packagesPath": "C:\\Users\\nhatm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nhatm\\OneDrive\\Desktop\\source\\app\\Share\\obj\\",
+        "outputPath": "C:\\Users\\nhatm\\OneDrive\\Desktop\\app\\Share\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nhatm\\AppData\\Roaming\\NuGet\\NuGet.Config",

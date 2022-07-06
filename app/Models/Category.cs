@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using API.Models.Products;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace API.Models
@@ -10,5 +11,6 @@ namespace API.Models
         public int Id { get; set; }
         public string CategoryName { get; set; }
         public string Description { get; set; }
+        public IEnumerable<Product> products { get; set; }
     }
 }

@@ -2,6 +2,8 @@ using API.Models.Products;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Newtonsoft.Json;
+using API.Models;
+
 
 namespace app.Pages
 {
@@ -9,6 +11,7 @@ namespace app.Pages
     {
         private readonly HttpClient _http;
         public Product DBProduct = new Product();
+        public Rating DBRating = new Rating();
         private int id;
         public async Task<IActionResult> OnGetAsync(int ProductID)
         {
@@ -21,7 +24,12 @@ namespace app.Pages
             var res = await client.GetAsync("api/Product/" + id);
             var result = res.Content.ReadAsStringAsync().Result;
             DBProduct = JsonConvert.DeserializeObject<Product>(result);
-            
+
+
+            var rate = await client.GetAsync("api/Rating");
+            var rating = res.Content.ReadAsStringAsync().Result;
+            DBProduct = JsonConvert.DeserializeObject<Product>(rating);
+
 
             return Page();
 

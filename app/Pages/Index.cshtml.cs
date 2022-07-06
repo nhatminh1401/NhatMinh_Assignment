@@ -12,7 +12,7 @@ namespace app.Pages
         public List<Product> DBProduct = new List<Product>();
 
 
-        public List<Category> CateroryID = new List<Category>();
+        //public List<Category> CateroryID = new List<Category>();
 
         public async Task<IActionResult> OnGetAsync()
         {
@@ -27,20 +27,14 @@ namespace app.Pages
 
 
 
-            var cid = await client.GetAsync("api/Category");
-            var CId = res.Content.ReadAsStringAsync().Result;
-            CateroryID = JsonConvert.DeserializeObject<List<Category>>(CId);
+            //var cid = await client.GetAsync("api/Category");
+            //var CId = res.Content.ReadAsStringAsync().Result;
+            //CateroryID = JsonConvert.DeserializeObject<List<Category>>(CId);
 
 
             return Page();
 
         }
-        
-
-       
-          
-
-
           
     }
 }
