@@ -1,0 +1,35 @@
+﻿@*@page
+@model app.Pages.SearchModel
+@{
+}
+
+<div>
+   
+    <div class="col-md-4" style="color: white ; margin-top: 10px;">
+        <div class="product-item">
+            <div class="product-title">
+                <a>@Model.DBProduct.ProductName</a>
+                <div class="ratting">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="product-image">
+                <a asp-area="" asp-page="DetailProducts"
+               asp-route-ProductID="@Model.DBProduct.Id">
+                    <img src="~/images/Pizzas/" + (@Model.DBProduct.ImageTitle);" class="w-100" asp-append-version="true" />
+                </a>
+            </div>
+            <div class="product-price">
+                <h4 style="text-align: center">@Model.DBProduct.Price<span>VND</span></h4>
+                <a class="btn btn-primary mt-1 pizza-img" style="text-align:right" asp-area="" asp-page="DetailProducts"
+               asp-route-ProductID="@Model.DBProduct.Id"><i class="fa fa-shopping-cart"></i>Get this Book</a>
+                <br />
+
+            </div>
+        </div>
+    </div>
+</div>*@

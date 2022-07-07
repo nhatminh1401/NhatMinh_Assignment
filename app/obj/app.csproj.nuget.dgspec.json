@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nhatm\\OneDrive\\Desktop\\app\\app\\app.csproj": {}
+    "C:\\Users\\nhatm\\OneDrive\\Desktop\\New folder\\app\\app.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nhatm\\OneDrive\\Desktop\\app\\API\\API.csproj": {
+    "C:\\Users\\nhatm\\OneDrive\\Desktop\\New folder\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nhatm\\OneDrive\\Desktop\\app\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\nhatm\\OneDrive\\Desktop\\New folder\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\nhatm\\OneDrive\\Desktop\\app\\API\\API.csproj",
+        "projectPath": "C:\\Users\\nhatm\\OneDrive\\Desktop\\New folder\\API\\API.csproj",
         "packagesPath": "C:\\Users\\nhatm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nhatm\\OneDrive\\Desktop\\app\\API\\obj\\",
+        "outputPath": "C:\\Users\\nhatm\\OneDrive\\Desktop\\New folder\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nhatm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -113,14 +113,14 @@
         }
       }
     },
-    "C:\\Users\\nhatm\\OneDrive\\Desktop\\app\\app\\app.csproj": {
+    "C:\\Users\\nhatm\\OneDrive\\Desktop\\New folder\\app\\app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nhatm\\OneDrive\\Desktop\\app\\app\\app.csproj",
+        "projectUniqueName": "C:\\Users\\nhatm\\OneDrive\\Desktop\\New folder\\app\\app.csproj",
         "projectName": "app",
-        "projectPath": "C:\\Users\\nhatm\\OneDrive\\Desktop\\app\\app\\app.csproj",
+        "projectPath": "C:\\Users\\nhatm\\OneDrive\\Desktop\\New folder\\app\\app.csproj",
         "packagesPath": "C:\\Users\\nhatm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nhatm\\OneDrive\\Desktop\\app\\app\\obj\\",
+        "outputPath": "C:\\Users\\nhatm\\OneDrive\\Desktop\\New folder\\app\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nhatm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -137,8 +137,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\nhatm\\OneDrive\\Desktop\\app\\API\\API.csproj": {
-                "projectPath": "C:\\Users\\nhatm\\OneDrive\\Desktop\\app\\API\\API.csproj"
+              "C:\\Users\\nhatm\\OneDrive\\Desktop\\New folder\\API\\API.csproj": {
+                "projectPath": "C:\\Users\\nhatm\\OneDrive\\Desktop\\New folder\\API\\API.csproj"
               }
             }
           }

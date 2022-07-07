@@ -2455,11 +2455,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nhatm\\OneDrive\\Desktop\\app\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\nhatm\\OneDrive\\Desktop\\New folder\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\nhatm\\OneDrive\\Desktop\\app\\API\\API.csproj",
+      "projectPath": "C:\\Users\\nhatm\\OneDrive\\Desktop\\New folder\\API\\API.csproj",
       "packagesPath": "C:\\Users\\nhatm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nhatm\\OneDrive\\Desktop\\app\\API\\obj\\",
+      "outputPath": "C:\\Users\\nhatm\\OneDrive\\Desktop\\New folder\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nhatm\\AppData\\Roaming\\NuGet\\NuGet.Config",

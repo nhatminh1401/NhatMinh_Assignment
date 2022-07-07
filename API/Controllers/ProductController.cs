@@ -1,6 +1,7 @@
 ﻿using API.Data;
 using API.Models;
 using API.Models.Products;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -103,6 +104,21 @@ namespace API.Controllers
             }
             return NotFound();
         }
-        
+
+
+        [HttpGet("Search/{kw}")]
+        [AllowAnonymous]
+        //[Route("kw")]
+        public async Task<IActionResult> GetProductByKeyWord([FromRoute] string kw)
+        {
+            var product = await dbContext.Products.Where(x => (x.ProductName.Contains(kw)))
+                .ToListAsync();
+
+            if (product == null)
+            {
+                return NotFound();
+            }
+            return Ok(product);
+        }
     }
 }

@@ -34,10 +34,10 @@ namespace app.Pages
             return Page();
 
         }
-        public async Task<IActionResult> OnPost(int ProductID)
+        public async Task<IActionResult> OnPost(int ProductID, string Comment)
         {
             var i = int.Parse(Request.Form["star"]);
-            //var cmt = (Request.Form["cmt"]).ToString;
+            var cmt = Request.Form["cmt"];
             
 
             return Page();
