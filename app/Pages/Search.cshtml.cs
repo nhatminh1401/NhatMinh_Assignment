@@ -14,15 +14,14 @@ namespace app.Pages
             if (!string.IsNullOrEmpty(keyword))
             {
                 ViewData["Data"] = keyword;
-                //var client = new HttpClient();
-                //client.BaseAddress = new Uri("https://localhost:7068/");
-
-                //string a = "";
+                var client = new HttpClient();
+                client.BaseAddress = new Uri("https://localhost:7068/");
 
 
-                //var res = await client.GetAsync("api/Product/Search/" + keyword);
-                //var result = res.Content.ReadAsStringAsync().Result;
-                //DBProduct = JsonConvert.DeserializeObject<Product>(result);
+
+                var res = await client.GetAsync("api/Product/Search/" + keyword);
+                var result = res.Content.ReadAsStringAsync().Result;
+                DBProduct = JsonConvert.DeserializeObject<Product>(result);
                 return Page();
             }
            

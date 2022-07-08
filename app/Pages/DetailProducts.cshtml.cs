@@ -19,7 +19,7 @@ namespace app.Pages
             var client = new HttpClient();
             client.BaseAddress = new Uri("https://localhost:7068/");
 
-            string a = "";
+            
             
             this.id = ProductID;
             var res = await client.GetAsync("api/Product/" + id);
@@ -39,7 +39,6 @@ namespace app.Pages
             var i = int.Parse(Request.Form["star"]);
             var cmt = Request.Form["cmt"];
             
-
             return Page();
         }
        
