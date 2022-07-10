@@ -1,4 +1,5 @@
-﻿using API.Requests;
+﻿using API.Models;
+using API.Requests;
 using API.Responses;
 
 namespace API.Interfaces
@@ -8,5 +9,6 @@ namespace API.Interfaces
         Task<TokenResponse> LoginAsync(LoginRequest loginRequest);
         Task<SignupResponse> SignupAsync(SignupRequest signupRequest);
         Task<LogoutResponse> LogoutAsync(int userId);
+        Task<List<User>> GetUsersAsync();
     }
 }

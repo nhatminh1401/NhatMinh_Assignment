@@ -112,5 +112,25 @@ namespace API.Controllers
 
             return Ok();
         }
+        [HttpGet]
+        [Route("GetUsers")]
+        public async Task<IActionResult> GetUsersAsync()
+        {
+            try
+            {
+                var product = await userService.GetUsersAsync();
+                if (product == null)
+                {
+                    return NotFound();
+                }
+
+                return Ok(product);
+            }
+            catch (Exception)
+            {
+                return BadRequest();
+            }
+
+        }
     }
 }

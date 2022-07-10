@@ -143,5 +143,13 @@ namespace API.Services
             };
 
         }
+        public async Task<List<User>> GetUsersAsync()
+        {
+            if (tasksDbContext != null)
+            {
+                return await tasksDbContext.Users.ToListAsync();
+            }
+            return null;
+        }
     }
 }
