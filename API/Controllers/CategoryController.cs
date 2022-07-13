@@ -92,6 +92,7 @@ namespace API.Controllers
             {
                 dbContext.Remove(category);
                 await dbContext.SaveChangesAsync();
+                return Ok(dbContext.Categories.ToListAsync());
             }
             return NotFound();
         }
