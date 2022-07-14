@@ -34,12 +34,13 @@ namespace API.Controllers
         }
 
 
-        [HttpPost]
-        public async Task<IActionResult> AddRating(AddRating addRating)
+        [HttpPost("{id}")]
+        public async Task<IActionResult> AddRating(AddRating addRating, int id)
         {
-            var rate = new Rating()
+            var rate = new AddRating()
             {
                 Comment = addRating.Comment,
+                ProductId = addRating.ProductId,
                 Ratting = addRating.Ratting,
                
             };

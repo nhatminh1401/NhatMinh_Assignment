@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Newtonsoft.Json;
 using API.Models;
-
+using System.Net.Http.Json;
 
 namespace app.Pages
 {
@@ -27,22 +27,30 @@ namespace app.Pages
             DBProduct = JsonConvert.DeserializeObject<Product>(result);
 
 
-            var rat = await client.GetAsync("api/Rating/" + id);
-            var rates= rat.Content.ReadAsStringAsync().Result;
+
+            return Page();
+
+        }
+        public async Task<IActionResult> OnPostAsync(int ProductID, string cmt, int star)
+        {
+
+            var client = new HttpClient();
+            client.BaseAddress = new Uri("https://localhost:7068/");
+            var item = new AddRating() { 
+                Comment = cmt,
+                Ratting = star,
+                ProductId = ProductID,
+                
+            };
+            var rat = await client.PostAsJsonAsync("api/Rating", item);
+            var rates = rat.Content.ReadAsStringAsync().Result;
             DbRating = JsonConvert.DeserializeObject<Rating>(rates);
 
-            return Page();
 
-        }
-        public async Task<IActionResult> OnPost(int ProductID, string Comment)
-        {
-            var i = int.Parse(Request.Form["star"]);
-            var cmt = Request.Form["cmt"];
-            
+            //var i = int.Parse(Request.Form["star"]);
+            //var comment = Request.Form["cmt"];
+
             return Page();
         }
-       
-
-
     }
 }

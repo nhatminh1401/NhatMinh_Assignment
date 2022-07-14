@@ -16,7 +16,7 @@ namespace API.Data
         
         public virtual DbSet<User> Users { get; set; }
 
-        public DbSet<Rating> Ratings { get; set; }
+        public DbSet<AddRating> Ratings { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
